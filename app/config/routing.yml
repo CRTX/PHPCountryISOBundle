@@ -1,0 +1,4 @@
+crtx_country_iso:
+    resource: "@CRTXCountryISOBundle/Resources/config/routing.yml"
+    prefix:   /
+

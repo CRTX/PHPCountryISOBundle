@@ -1,0 +1,3 @@
+crtx_country_iso_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CRTXCountryISOBundle:Default:index }
