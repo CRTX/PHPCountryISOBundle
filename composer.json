@@ -1,8 +1,9 @@
 {
-    "name": "symfony/framework-standard-edition",
-    "license": "MIT",
-    "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "name": "CRTX/PHPCountryISOBundle",
+    "license": "N/A",
+    "type": "symfony-bundle",
+    "description": "A Symfony2 Bundle that contains a list of countries in ISO format.",
+    "version": "0.1",
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
