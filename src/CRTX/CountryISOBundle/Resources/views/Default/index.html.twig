@@ -1,1 +1,15 @@
-Hello {{ name }}!
+Twig example for rendering countries.
+
+{% for country, stateArray in countryArray %}
+    <div>
+    {{ country }} : 
+    {% for state, cityArray in stateArray %}
+        <p>
+        {{ state }} :
+        </p>
+        {% for city in cityArray %}
+            {{ city }},
+        {% endfor %}
+    {% endfor %}
+    </div>
+{% endfor %}
