@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('Country');
+        $rootNode = $treeBuilder->root('crtx_country_iso');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
