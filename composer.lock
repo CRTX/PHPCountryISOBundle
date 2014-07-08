@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CRTX/PHPCountryISO",
-                "reference": "ff6164d1ccf3d3cd77d91089a256a697801a09f8"
+                "reference": "caaf89c441a889261458d746a22b207af7437c92"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -37,7 +37,7 @@
                 "country",
                 "php"
             ],
-            "time": "2014-07-02 21:41:44"
+            "time": "2014-07-08 03:40:37"
         },
         {
             "name": "doctrine/annotations",
