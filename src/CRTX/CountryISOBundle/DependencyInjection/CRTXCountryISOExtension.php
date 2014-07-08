@@ -38,7 +38,8 @@ class CRTXCountryISOExtension extends Extension implements PrependExtensionInter
     public function prepend(ContainerBuilder $container)
     {
         $yaml = new Parser();
-        $file = __DIR__.'/../../../../vendor/CRTX/PHPCountryISO/countries.yml';
+        $approot = $container->getParameter('kernel.root_dir');
+        $file = $approot . '/../vendor/CRTX/PHPCountryISO/countries.yml';
         $CountryArray = $yaml->parse(file_get_contents($file));
         $container->prependExtensionConfig('crtx_country_iso', $CountryArray);
     }
