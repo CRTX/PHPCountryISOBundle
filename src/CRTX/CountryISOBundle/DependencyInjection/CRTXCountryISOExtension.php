@@ -46,4 +46,5 @@ class CRTXCountryISOExtension extends Extension implements PrependExtensionInter
                 'CountryISO' => $CountryArray
             )
         );
+    }
 }
