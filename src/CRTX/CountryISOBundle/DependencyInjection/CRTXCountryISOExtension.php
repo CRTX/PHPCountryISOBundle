@@ -27,7 +27,7 @@ class CRTXCountryISOExtension extends Extension implements PrependExtensionInter
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $container->setParameter('CountryISO', $config['Country']);
+        $container->setParameter('CountryISO', $config['CountryISO']);
     }
 
     public function getAlias()
@@ -41,6 +41,9 @@ class CRTXCountryISOExtension extends Extension implements PrependExtensionInter
         $approot = $container->getParameter('kernel.root_dir');
         $file = $approot . '/../vendor/CRTX/PHPCountryISO/countries.yml';
         $CountryArray = $yaml->parse(file_get_contents($file));
-        $container->prependExtensionConfig('crtx_country_iso', $CountryArray);
-    }
+        $container->prependExtensionConfig(
+            'crtx_country_iso', array(
+                'CountryISO' => $CountryArray
+            )
+        );
 }

@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->variableNode('Country')->end()
+                ->variableNode('CountryISO')->end()
             ->end()
         ;
 
